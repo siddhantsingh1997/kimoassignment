@@ -17,11 +17,336 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+}
+
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url('../fonts/IBMPlexMono-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url('../fonts/IBMPlexMono-Bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Greycliff CF";
+  src: url('../fonts/greycliff.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.carousel .slider-wrapper {
+  margin-top: 84px !important;
+  margin-left: 16px !important;
+}
+
+.head-text{
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #001A1A;
+}
+
+.head-button-text{
+  font-family: 'Greycliff CF';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+
+.welcome-to-hawai {
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 140px;
+line-height: 132px;
+/* or 94% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 6.44%, #FFFFFF 95.08%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+position: absolute;
+margin: 0 auto;
+left: 0;
+right: 0;
+top:176px;
+width: 824px;
+height: 264px;
+}
+
+.highlight-text{
+  font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+
+
+/* Dark */
+
+color: #001A1A;
+}
+
+.highlight-title{
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 20px;
+/* identical to box height, or 83% */
+
+
+/* Green */
+
+color: #008080;
+}
+
+.highlight-description{
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* or 125% */
+
+
+/* Dark */
+
+color: #001A1A;
+
+}
+
+.categories-text{
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+
+
+/* Dark */
+
+color: #001A1A;
+}
+
+.travel-guide{
+  font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+
+
+/* Dark */
+
+color: #001A1A;
+}
+
+.title-profile-text{
+  font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 20px;
+/* identical to box height, or 83% */
+
+
+/* Dark */
+
+color: #001A1A;
+}
+
+.guide-text{
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+  
+  
+  /* Dark */
+  
+  color: #001A1A;
+  
+}
+
+.contact-text{
+  font-family: 'Greycliff CF';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #008080;
+}
+
+.hero-banner-mobile{
+  display:none;
+}
+
+.top-mobile-view{
+  display:none
+}
+
+
+.top-title{
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 132px;
+/* or 94% */
+
+
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 6.44%, #FFFFFF 95.08%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+
+@media only screen and (max-width: 640px) {
+  .main-menu-wrapper{
+    display:none
+  }
+
+  .highlights-wrapper{
+    display:none
+  }
+
+  .section-wrapper{
+    display:none
+  }
+
+  .welcome-to-hawai{
+    width: 360px;
+    height: 130px;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 60px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 6.44%, rgba(255, 255, 255, 0.9) 95.08%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-banner{
+    height: 480px;
+    /* left: 0px;
+    top: 80px;
+    position: absolute; */
+    background: url('/img/mobileviewheroimage.svg'), #D9D9D9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:-1;
+  }
+
+   .mobile-links{
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+  } 
+
+  .over-lay-black{
+    background-color: #001A1A;
+    opacity: 0.8;
+  }
+
+  .top-mobile-view {
+    display:block
+  }
+
+  .hightlight-text-mobile{
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #001A1A;
+  }
+
+  .mobile-card-title{
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+    color: #008080;
+  }
+
+  .mobile-card-description{
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #001A1A;
+    margin-top: 16px;
+  }
+
+  .categories-mobile{
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #001A1A;
+  }
+
+  .categories-mobile-title{
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+/* identical to box height, or 125% */
+
+
+     color: #000000;
+
+  }
+
+  .top-title{
+    font-size:40px;
+  }
+  
+}
+
+@media only screen and (max-width: 800px) {
+  .top-title{
+    font-size:40px;
+  }
+  
 }
